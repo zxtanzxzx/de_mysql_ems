@@ -11,6 +11,21 @@
 
         @include('top_bar')
         @yield('content')
+        @if (\Request::is('/'))
+            <div class="grid grid-cols-1 gap-2 w-full">
+                <div class="p-3 m-auto bg-blue-400 h-12 w-30">
+                    <a href="{{route('user')}}" >User</a> &nbsp;
+                </div>
+                <div class="p-3 m-auto bg-blue-400 h-12 w-30">
+                    <a href="{{route('product')}}" >Product</a> &nbsp;
+
+                </div>
+                <div class="p-3 m-auto bg-blue-400 h-12 w-30">
+                    <a href="{{route('manufacturer')}}" >Manufacturer</a>
+
+                </div>
+            </div>
+        @endif
     </div>
 </body>
 </html>
