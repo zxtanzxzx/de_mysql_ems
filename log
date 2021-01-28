@@ -1,0 +1,7 @@
+php artisan make:model ProductcCategory -cmfs
+php artisan make:model Manufacturer -cmfs
+php artisan make:model UserAddress -cmfs
+php artisan make:model ManufacturerAddress -cmfs
+php artisan make:model Product -cmfs
+php artisan make:model Order -cmfs
+php artisan make:model OrderProduct -cmfs
