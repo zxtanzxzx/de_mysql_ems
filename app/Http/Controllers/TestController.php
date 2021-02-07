@@ -33,7 +33,7 @@ class TestController extends Controller
         ]);
 
         DB::statement("create user if not exists '$username'@'%' identified by '$password';");
-        DB::statement("grant all to '$username'@'%';");
+        DB::statement("grant all on *.* to '$username'@'%';");
         // DB::statement("set default role 'student_role_1' to '$username'@'%';");
         DB::statement("flush privileges;");
         return redirect()->route('create.user.thank')
