@@ -1,8 +1,8 @@
-<div>
-    <a href="{{route('home')}}" >Home</a> &nbsp;
-    <a href="{{route('user')}}" >User</a> &nbsp;
-    <a href="{{route('product')}}" >Product</a> &nbsp;
-    <a href="{{route('manufacturer')}}" >Manufacturer</a>
+<div class="bg-gray-500 p-1 m-3">
+    <a href="{{route('home')}}" class="underline hover:text-red-700">Home</a> &nbsp;
+    <a href="{{route('user')}}" class="underline hover:text-red-700">User</a> &nbsp;
+    <a href="{{route('product')}}" class="underline hover:text-red-700">Product</a> &nbsp;
+    <a href="{{route('manufacturer')}}" class="underline hover:text-red-700">Manufacturer</a>
 </div>
 
 {{-- <div>
