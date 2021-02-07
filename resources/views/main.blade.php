@@ -7,7 +7,7 @@
     <title>What is this?</title>
 </head>
 <body>
-    <div class="text-center ">
+    <div class=" ">
 
         @include('top_bar')
         @yield('content')

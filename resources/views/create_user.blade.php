@@ -1,22 +1,22 @@
 @extends('main')
 @section('content')
-<h1>Manufacturer List</h1>
+<h1>Create user</h1>
 <div>
 <div>
     <form action="{{route('create.user.post')}}" method="post">
         @csrf
-        <div>
-            <label for="username">Username</label> &nbsp;&nbsp;
-            <input type="text" name="username" id="username" value="{{old('username')}}">
+        <div class="m-1 p-1">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" value="{{old('username')}}" class="border-2 border-black rounded hover:bg-gray-100">
             <div>
                 @error('username')
                 {{ $message }}
                 @enderror
             </div>
         </div>
-        <div>
-            <label for="username">Password</label> &nbsp;&nbsp;&nbsp;
-            <input type="password" name="password" id="password"> Min 6 character, Must have at least 1 Number
+        <div class="m-1 p-1">
+            <label for="username">Password</label>
+            <input type="password" name="password" id="password" class="border-2 border-black rounded hover:bg-gray-100"><span> Min 6 character, Must have at least 1 Number</span>
             <div>
                 @error('password')
                 {{ $message }}
@@ -24,7 +24,7 @@
             </div>
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" class="border-2 border-black rounded p-2 m-1 hover:bg-gray-500">Submit</button>
     </form>
 </div>
 </div>
